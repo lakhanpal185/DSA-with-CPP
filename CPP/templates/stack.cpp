@@ -2,6 +2,8 @@
 // updated 2018-09-08 for CppSTL 2018
 #include "stack.h"
 
+
+// from here we have to copy the containt of this file to the stack. h file 
 // Stack<T> constructor
 template <typename T>
 Stack<T>::Stack ( int s ) {
