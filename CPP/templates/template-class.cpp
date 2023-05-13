@@ -1,5 +1,3 @@
-// template-class.cpp by Bill Weinman <http://bw.org/>
-// updated 2018-09-09
 #include "stack.h"
 #include <iostream>
 #include <string>
