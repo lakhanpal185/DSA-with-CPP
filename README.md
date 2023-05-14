@@ -1,7 +1,7 @@
 # DSA-with-CPP
 This repository contains STL, DSA concepts and the question with the solution in c++
 
-##C++ STL
+## C++ STL
 ### Templates
 1. function templates (templates arguments deduction)
 2. class templates
@@ -10,6 +10,7 @@ This repository contains STL, DSA concepts and the question with the solution in
 ### Constainers
 1. vector 
 2. list
+3. pair and tuple
 
 ## DSA
-1. strings
+###strings
