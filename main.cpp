@@ -1,51 +1,54 @@
 #include<iostream>
-#include<tuple>
+#include<array>
 #include<string>
 using namespace std;
- 
+
 template<typename T>
-void print_tuple(T  p){
-    auto tsz = tuple_size<decltype(p)>::value;
-    if( tsz != 3) return;
-    cout << get<0>(p)<<" "<< get<1>(p) << ' ' << get<2>(p)<<endl;
+void printa(T & v){
+    if (v.empty()) return;
+    for(int i = 0; i < v.size(); ++i){
+        cout << v[i]<<" ";
+    }
+    cout << endl;
 }
 
-void message(const char * m ){cout << m <<endl;}
-void message(const char *m, const int  n) {cout << m << " : "<< n<<endl;}
+void message(const char *m ){ cout << m << endl;}
+template <typename T>
+void message(const char *m, const T & n) {cout << m << " : "<< n<<endl;}
 
 int main(void){
     
     //initializer list
     message("initializer list");
-    tuple<int, string, int> p1 = {1, "ice cream", 30};
-    print_tuple(p1);
-    
-    // default constructor 
+    array<char,7> a1 = {65,66,67,68,69};
+    printa(a1);
+
+   // default constructor
     message("default constructor");
-    tuple<int,string,int> p2(0, "pop", 5);
-    print_tuple(p2);
+    array<string, 5> a2= {"one", "two", "three"};
+    printa(a2);
+// check the size
+    message("size of a1", (int) a1.size());
+    message("size of a2", (int) a2.size());
+    
+    // access elements
+    message("a1 element 3 is", a1[3]);
+    message("a2 element 2 is", a2[2]);
+    message("a1 element 3 is", a1.at(3));
+    message("a2 element 2 is", a2.at(2));
+    
+    // direct access data
+    auto * ip1 = a1.data();
+    for (size_t i = 0; i < a1.size(); ++i) {
+        cout << "element " << i << " is " << *ip1++ << endl;
+    }
+    
+    string * ip2 = a2.data();
+    for (size_t i = 0; i < a2.size(); ++i) {
+        cout << "element " << i << " is " << *ip2++ << endl;
+    }
 
-    //make_tuple
-    message("make_tuple");
-    tuple<int,string,int> p3;
-    p3 = make_tuple(3,"coke",90);
-    print_tuple(p3);
 
-    message("t1 == t2", p1 == p2); //compaire all elements
-    message("t1 < t2", p1 < p2);
-    message("t1 < t3", p1 < p3);
-    message("t1 > t2", p1 > p2);
-    message("t2 > t3", p2 > p3);
+    return 0;
 }
-// $ ./main
-// initializer list
-// 1 ice cream 30
-// default constructor
-// 0 pop 5
-// make_tuple
-// 3 coke 90
-// t1 == t2 : 0
-// t1 < t2 : 0
-// t1 < t3 : 1
-// t1 > t2 : 1
-// t2 > t3 : 0
+
