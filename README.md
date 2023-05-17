@@ -11,6 +11,8 @@ This repository contains STL, DSA concepts and the question with the solution in
 1. vector 
 2. list
 3. pair and tuple
+4. set
+5. deque
 
 ## DSA
 ###strings
