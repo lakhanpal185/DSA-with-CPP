@@ -13,6 +13,8 @@ This repository contains STL, DSA concepts and the question with the solution in
 3. pair and tuple
 4. set
 5. deque
+6. map
+7. string
 
 ## DSA
 ###strings
