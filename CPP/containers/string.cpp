@@ -46,7 +46,7 @@ int main() {
     cout << "after replace: " << s1 << endl;
     
     // substr
-    cout << "substr: " << s1.substr(5, 5) << endl;
+    cout << "substr: " << s1.substr(5, 5) << endl; //substr(staring_index, number_of_characters)
     
     // find
     size_t pos = s1.find("s");
