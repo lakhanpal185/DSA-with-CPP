@@ -15,6 +15,9 @@ This repository contains STL, DSA concepts and the question with the solution in
 5. deque
 6. map
 7. string
+### transformation
+1. transform
+2. lembda transformation
 
 ## DSA
 ###strings
