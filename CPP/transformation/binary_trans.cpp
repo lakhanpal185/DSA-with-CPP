@@ -36,3 +36,9 @@ int main() {
     
     return 0;
 }
+
+// The transform function iterates over the input ranges (v1 and v2), applies fbig to each pair of corresponding elements,
+// and stores the results in the output range (v3).
+// In this specific example, the embiggen functor multiplies each pair of elements from v1 and v2 together,
+// and accumulates the result using the _accum member variable. The initial value of _accum is 1, and after each multiplication,
+// it is updated with the new result. The final result for each element is stored in the corresponding position in v3.
