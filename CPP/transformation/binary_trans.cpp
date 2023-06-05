@@ -28,6 +28,7 @@ int main() {
     disp_v(v2);
     disp_v(v3);
     cout << endl;
+
     
     transform(v1.begin(), v1.end(), v2.begin(), v3.begin(), fbig);
     disp_v(v1);

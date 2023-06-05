@@ -18,6 +18,8 @@ This repository contains STL, DSA concepts and the question with the solution in
 ### transformation
 1. transform
 2. lembda transformation
+3. string transformation
+4. binary transformation
 
 ## DSA
 ###strings
