@@ -20,6 +20,12 @@ This repository contains STL, DSA concepts and the question with the solution in
 2. lembda transformation
 3. string transformation
 4. binary transformation
+5. numword transformation
+
+### functor
+1. functor defination
+2. arithmetic functor
+
 
 ## DSA
 ###strings

@@ -27,3 +27,22 @@ int main() {
     
     return 0;
 }
+
+// In C++, a functor refers to an object that can be treated as a function. Functors are instances of classes 
+// or structures that overload the function call operator operator(). They provide a way to define and use 
+// functions as objects, allowing them to be stored, passed as arguments, and invoked in a similar way to regular functions.
+
+// class AddFunctor {
+// public:
+//     int operator()(int a, int b) const {
+//         return a + b;
+//     }
+// };
+// int main() {
+//     AddFunctor add;
+//     int result = add(3, 4);  // Equivalent to calling add.operator()(3, 4)
+//     // result is now 7
+//     return 0;
+// }
+
+
