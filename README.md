@@ -24,8 +24,9 @@ This repository contains STL, DSA concepts and the question with the solution in
 
 ### functor
 1. functor defination
-2. arithmetic functor
+2. arithmetic functors
+3. relational functors
 
 
 ## DSA
-###strings
+### strings
