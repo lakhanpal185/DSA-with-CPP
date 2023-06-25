@@ -23,5 +23,12 @@ int main() {
     replace(v1.begin(), v1.end(), 47, 99);
     disp_v(v1);
 
+    replace_if(v1.begin(), v1.end(), is_even<int>, 99);
+    disp_v(v1);
+
+    remove(v1.begin(), v1.end(), !is_even<int>);
+    disp_v(v1);
+
+
     return 0;
 }
